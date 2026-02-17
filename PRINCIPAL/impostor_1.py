@@ -28,7 +28,7 @@ from FUNCIONES.Continuar import continuar
 
 
 #EXTRA
-from FUNCIONES.BorrarPantalla import clean
+from FUNCIONES.BorrarPantalla import clean, clean_espera
 import time
 
 
@@ -41,6 +41,12 @@ while True:
 
     instrucciones()
     lista_de_jugadores = renombrar_repetidos(funcion_lista_jugadores()) 
+
+
+    #Borrar pantalla
+    clean_espera(3)
+
+
 
 
 
